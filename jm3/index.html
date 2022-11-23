@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手机页面</title>
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+			}
+			#view_div {
+			    width: 640px;
+			    padding: 20px;
+			    height: 1080px;
+			    margin: 0 auto;
+			    background-image: url('img/4.png');
+			    background-size: 100% ;
+			}
+			
+			.image1{
+				position: relative;
+				right:-25% ;
+				top: -33%;
+			}
+				
+			.image2{
+				position: relative;
+				right:-75% ;
+				top: -70%;
+			}
+			
+			.image3{
+				position: relative;
+				top: -31%;
+				width: 100%;	
+				animation-name: fade;
+				animation-duration: 3s;
+			}
+			@keyframes fade{
+				from{opacity: 0}
+				to{opacity: 1}
+			}
+			.image4{
+				position: relative;
+				top:-145%;
+				right: 9%;
+				
+			}
+			
+			.image5{
+				position: relative;
+				top:-190%;
+				left:14%;
+				animation-name: fade;
+				animation-duration: 5s;
+			}
+			
+			.image6{
+				position: relative;
+				top:-193%;
+				left:18%;
+				animation-name: fade;
+				animation-duration: 5s;
+			}
+			.image7{
+				position: relative;
+				top:-190%;
+				left:23%;
+				animation-name: fade;
+				animation-duration: 5s;
+			}
+			.image8{
+				position: relative;
+				top:-220%;
+				left:-60%;
+				opacity: 1;
+			}
+			.image9{
+				position: relative;
+				top:-205%;
+				left:-70%;
+				opacity: 0.5;
+				
+			}
+			.image10{
+				position: relative;
+				top:-190%;
+				left:-80%;
+				opacity: 0.5;
+			}
+			.image11{
+				position: relative;
+				top:-187%;
+				left:-2%;
+				opacity: 0.5;
+			}
+			
+
+			</style>
+			
+			<script type="text/javascript">     /添加点击事件函数/
+			      function next(){
+			        window.location.href="https://wpc1207.github.io/ex3/jm1/";      
+			      }
+				  function next4(){
+					document.getElementsByClassName("image5").style.display= "block";
+				  }
+			</script>
+			
+	</head>
+	<body>
+		<div id="view_div">
+			
+			<img class="image1"  style="z-index: 2;" src="img/3.png" />
+			<img class="image2"  style="z-index: 3;" src="img/确认字样.png"  onclick="next()"/>
+			<img class="image3"  style="z-index: 2;" src="img/10.png" />
+			<img class="image4"  style="z-index: 1;" src="img/6.png" />
+			<img class="image5"  style="z-index: 3;" src="img/方形.png" onclick="next1()"/>
+			<img class="image6"  style="z-index: 3;" src="img/圆形.png" onclick="next2()"/>
+			<img class="image7"  style="z-index: 3;" src="img/椭圆.png" onclick="next3()"/>
+			<img class="image8"  style="z-index: 3;" src="img/扇形字样.png" onclick="next4()"/>
+			<img class="image9"  style="z-index: 3;" src="img/花纹字样.png" onclick="next3()"/>
+			<img class="image10"  style="z-index: 3;" src="img/边框字样.png" onclick="next3()"/>
+			<img class="image11"  style="z-index: 3;" src="img/底色字样.png" onclick="next3()"/>
+			
+			
+		</div>
+	</body>
+</html>
