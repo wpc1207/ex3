@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手机页面</title>
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+				margin-top: 0;
+			}
+			
+			
+			#view_div {
+			    width: 640px;
+			    padding: 20px;
+			    height: 1080px;
+			    margin: 0 auto;
+			    background-image: url('img/4.png');
+			    background-size: 100%;
+			}
+			
+			#image1{
+				position: relative;
+				right: 10%;
+				top: -10%;
+				animation-name: fade;
+				animation-duration: 8s;
+
+			}
+			
+			@keyframes fade{
+				from{opacity: 0}
+				to{opacity: 1}
+			}
+			@keyframes clock1{
+			        from{transform:rotateY(0deg)}
+			        to{transform:rotateY(360deg)}
+			    }
+				
+			#image2{
+				position: relative;
+				right:-20% ;
+				top: -120%;
+				width:50%;
+				animation:clock1 3s ease ;
+				transform-origin:middle;
+
+				}	
+			
+			#image3{
+				position: relative;
+				top: -115%;
+				right: -20%;
+				width: 52%;	
+				animation: clock1 3s  ease 1.5s;
+				transform-origin:middle;	
+			}
+			
+			#image4{
+				position: relative;
+				top:-111%;
+				right: -20%;
+				width: 52%;	
+				animation: clock1 3s  ease 3s;
+				transform-origin:middle;
+			}
+			#image4{
+			  	transform:rotateY(360deg);
+			  }
+			
+			
+			</style>
+			
+			<script type="text/javascript">     
+				 function next1(){
+			        window.location.href="";      
+			    }
+				
+				 function next2(){
+					window.location.href="";
+				}
+				function next3(){
+					window.location.href="";
+				}
+				
+			</script>
+			
+	</head>
+	<body>
+		<div id="view_div">
+			<img id="image1"  src="img/7.png" />
+			<img id="image2"  src="img/8(1).png" onclick="next1()"/>
+			<img id="image3"  src="img/8(2).png" onclick="next2()"/>
+			<img id="image4"  src="img/8(3).png" onclick="next3()"/>
+			
+		</div>
+	</body>
+</html>
